@@ -71,7 +71,7 @@ class QTTPSHARED_EXPORT HttpServer : public QObject
       std::shared_ptr<Action> action(new T());
       if(!HttpServer::addAction(action))
       {
-        LOG_DEBUG("A previously installed action has been replaced");
+        //LOG_DEBUG("A previously installed action has been replaced");
       }
       return action;
     }
@@ -87,7 +87,7 @@ class QTTPSHARED_EXPORT HttpServer : public QObject
       std::shared_ptr<Action> action(new T(param));
       if(!HttpServer::addAction(action))
       {
-        LOG_DEBUG("A previously installed action has been replaced");
+        //LOG_DEBUG("A previously installed action has been replaced");
       }
       return action;
     }
